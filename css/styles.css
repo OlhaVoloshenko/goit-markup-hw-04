@@ -431,12 +431,6 @@ margin-left: 50px;
     color: var(--background-color);
     background-color: var(--accent-text-color);
 }
-.button {
-    border-radius: 4px solid var(--background-color-portfolio);
-}
-/*.portfolio-item {
-    border-radius: 4px solid var(--background-color-portfolio);
-}*/
 
 /*portfolio container*/
 .header-menu{

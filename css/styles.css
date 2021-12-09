@@ -223,13 +223,11 @@ margin-left: 50px;
 .feature-list .feature-item {
     width: calc((100% - 90px) / 4);
     /*min-width: 270px;*/
-    outline: 1px solid red;
 }
 .feature-item::before {
     display: block;
     content: '';
     height: 120px;
-    outline: 1px solid rebeccapurple;
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--background-color-portfolio);

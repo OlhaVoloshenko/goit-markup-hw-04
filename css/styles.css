@@ -159,10 +159,18 @@ margin-left: 50px;
 
 /*main*/
 .main {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
-    background-image: url('../images/hero.jpg');
+    background-image: 
+    linear-gradient(to right, rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url('../images/hero.jpg');
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     background-color: var(--background-color-main);
 }
 .main-menu {
@@ -215,6 +223,28 @@ margin-left: 50px;
 .feature-list .feature-item {
     width: calc((100% - 90px) / 4);
     /*min-width: 270px;*/
+    outline: 1px solid red;
+}
+.feature-item::before {
+    display: block;
+    content: '';
+    height: 120px;
+    outline: 1px solid rebeccapurple;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--background-color-portfolio);
+}
+.feature-item.icon-antenna::before {
+    background-image: url(../images/1/antenna.svg);
+}
+.feature-item.icon-clock::before {
+    background-image: url(../images/1/clock1.svg);
+}
+.feature-item.icon-diagram::before {
+    background-image: url(../images/1/diagram.svg);
+}
+.feature-item.icon-astronaut::before {
+    background-image: url(../images/1/astronaut.svg);
 }
 .featute-subtitle {
     margin-bottom: 10px;

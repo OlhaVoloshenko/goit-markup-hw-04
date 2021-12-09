@@ -14,3 +14,35 @@ Single-colored icons can be modified like so:
   color: red;
 }
 ========================================== */
+
+.client1 {
+  width: 0.8720703125em;
+}
+
+.client2 {
+  width: 0.76953125em;
+}
+
+.client3 {
+  width: 1.0712890625em;
+}
+
+.client4 {
+  width: 2.0234375em;
+}
+
+.client5 {
+  width: 1.3408203125em;
+}
+
+.client6 {
+  width: 2.0888671875em;
+}
+
+.envelope {
+  width: 1.3330078125em;
+}
+
+.smartphone {
+  width: 0.625em;
+}

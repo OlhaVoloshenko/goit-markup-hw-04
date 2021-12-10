@@ -460,14 +460,15 @@ margin-left: 50px;
    /* background-color: rgb(146, 130, 238);*/
 }
 .clients-item {
-    border-radius: 1px;
-    border-style: solid;
-    border-color: var(--color-icons-items);
     display: flex;
     width: 170px;
     height: 90px;
     justify-content: center;
     align-items: center;
+
+    border-radius: 1px;
+    border-style: solid;
+    border-color: var(--color-icons-items);
 }
 .clients-item:not(:first-child) {
     margin-left: 30px;
@@ -518,13 +519,11 @@ margin-left: 50px;
 }
 /*footer*/
 .contacts {
+    display: flex;
     padding-top: 0;
     padding-bottom: 0;
     background-color: var(--background-color-main);
-}
-.blocks {
-    display: flex;
-    
+       
 }
 .contacts-logo {
     display: inline-block;
@@ -617,27 +616,19 @@ margin-left: 50px;
         margin-right: 10px;
         background-color: rgba(255, 255, 255, 0.1);
 }
-
-.instagram1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.comming-social-link:hover,
+.comming-social-link:focus {
+    background-color: var(--accent-text-color);
 }
-.twitter1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.facebook1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+.instagram1,
+.twitter1,
+.facebook1,
 .linkedin1 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .instagram1 svg {
     width: 20px;
     height: 20px;

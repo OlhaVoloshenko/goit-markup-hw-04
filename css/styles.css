@@ -8,6 +8,7 @@
     --background-color-main: #2F303A;
     --border-portfolio-cards: #EEEEEE;
     --border-portfolio-header: #ECECEC;
+    --color-icons-items: #AFB1B8;
 }
 /*html {
     box-sizing: border-box;
@@ -70,7 +71,11 @@ body {
 }
 
 /*Header*/
-
+/*.header-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}*/
 .header-logo {
     width: 145px;
     margin-left: 0;
@@ -122,7 +127,25 @@ body {
 .header-contacts .header-item + .header-item {
 margin-left: 50px;
 }
-
+.header-item {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-item svg {
+    margin-right: 10px;
+}
+.smartphone {
+    width: 10px;
+    height: 16px;
+}
+.envelope {
+    width: 16px;
+    height: 12px;
+}
+.header-item:hover svg {
+    fill: var(--accent-text-color);
+}
 .header-contacts .header-mail,
 .header-contacts .header-phone {
     font-weight: 500;
@@ -228,6 +251,7 @@ margin-left: 50px;
     display: block;
     content: '';
     height: 120px;
+    margin-bottom: 30px;
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--background-color-portfolio);
@@ -280,17 +304,9 @@ margin-left: 50px;
 .directions-picture {
     height: 294px;
 }
-
- /*.directions-picture.nogap {
-      display: block;
-}*/
-
 .directions-item:not(:first-child) {
       margin-left: 30px;
 }
-/*.directions-picture:first-child {
-        margin-left: 0px;
-}*/
 
 /*team*/
 
@@ -377,7 +393,7 @@ margin-left: 50px;
 .instagram svg {
     width: 20px;
     height: 20px;
-    fill: #AFB1B8;
+    fill: var(--color-icons-items);
 }
 .instagram:hover svg,
 .instagram:focus svg {
@@ -391,7 +407,7 @@ margin-left: 50px;
 .twitter svg {
     width: 20px;
     height: 20px;
-    fill: #AFB1B8;
+    fill: var(--color-icons-items);
 }
 .twitter:hover svg,
 .twitter:focus svg {
@@ -405,7 +421,7 @@ margin-left: 50px;
 .facebook svg {
     width: 20px;
     height: 20px;
-    fill: #AFB1B8;
+    fill: var(--color-icons-items);
 }
 .facebook:hover svg,
 .facebook:focus svg {
@@ -419,7 +435,7 @@ margin-left: 50px;
 .linkedin svg {
     width: 20px;
     height: 20px;
-    fill: #AFB1B8;
+    fill: var(--color-icons-items);
 }
 .linkedin:hover svg,
 .linkedin:focus svg {
@@ -428,36 +444,56 @@ margin-left: 50px;
 
 
 /*clients*/
-.clients {
+/*.clients {
     margin-top: 0;
     text-align: center;
-}
+}*/
 .clients-title {
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
+    text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
 .clients-list {
     display: flex;
+    align-items: center;
+    justify-content: center;
+   /* background-color: rgb(146, 130, 238);*/
+}
+.clients-item {
+    border-radius: 1px;
+    border-style: solid;
+    border-color: antiquewhite;
+    display: flex;
+    width: 170px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+}
+.clients-item:not(:first-child) {
+    margin-left: 30px;
+}
+.clients-link {
+    display: inline-flex;
     padding: 0;
     margin: 0;
-}
-.clients-button {
-    margin-bottom: 50px;
-    margin-left: 30px;
-    color: var(--primary-text-color);
-    width: 170px;
-    height: 92px;
-}
-.clients-icon {
     width: 106px;
     height: 60px;
+   /* background-color: yellow;*/
 }
-.clients-icon:hover {
-    background-color: var(--accent-text-color);
+.client1,
+.client2,
+.client3,
+.client4,
+.client5,
+.client6 svg {
+    fill: var(--color-icons-items);
+}
+.client2:hover svg {
+    color: var(--accent-text-color);
 }
 
 /*footer*/

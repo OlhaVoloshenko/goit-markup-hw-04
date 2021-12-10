@@ -216,7 +216,6 @@ margin-left: 50px;
 .button-primary {
     display: inline-block;
     padding: 10px 32px;
-    border-radius: none;
     min-width: 200px;
 
     font-weight: 700;
@@ -444,10 +443,7 @@ margin-left: 50px;
 
 
 /*clients*/
-/*.clients {
-    margin-top: 0;
-    text-align: center;
-}*/
+
 .clients-title {
     margin-bottom: 50px;
     font-weight: 700;
@@ -466,7 +462,7 @@ margin-left: 50px;
 .clients-item {
     border-radius: 1px;
     border-style: solid;
-    border-color: antiquewhite;
+    border-color: var(--color-icons-items);
     display: flex;
     width: 170px;
     height: 90px;
@@ -484,6 +480,10 @@ margin-left: 50px;
     height: 60px;
    /* background-color: yellow;*/
 }
+.clients-item:hover,
+.clients-item:focus {
+    border-color: var(--accent-text-color);
+}
 .client1,
 .client2,
 .client3,
@@ -492,15 +492,39 @@ margin-left: 50px;
 .client6 svg {
     fill: var(--color-icons-items);
 }
-.client2:hover svg {
-    color: var(--accent-text-color);
+.client1:hover svg,
+.client1:focus svg {
+    fill: var(--accent-text-color);
 }
-
+.client2:hover svg,
+.client2:focus svg {
+    fill: var(--accent-text-color);
+}
+.client3:hover svg,
+.client3:focus svg {
+    fill: var(--accent-text-color);
+}
+.client4:hover svg,
+.client4:focus svg {
+    fill: var(--accent-text-color);
+}
+.client5:hover svg,
+.client5:focus svg {
+    fill: var(--accent-text-color);
+}
+.client6:hover svg,
+.client6:focus svg {
+    fill: var(--accent-text-color);
+}
 /*footer*/
 .contacts {
     padding-top: 0;
     padding-bottom: 0;
     background-color: var(--background-color-main);
+}
+.blocks {
+    display: flex;
+    
 }
 .contacts-logo {
     display: inline-block;
@@ -515,9 +539,7 @@ margin-left: 50px;
     line-height: 1.19;
 /* identical to box height */
     letter-spacing: 0.03em;
-    color: var(--background-color);
-
-    
+    color: var(--background-color); 
 }
 .contacts-logo > span{
     color: var(--accent-text-color);
@@ -535,11 +557,6 @@ margin-left: 50px;
     display: inline-block;
     padding-bottom: 60px;
 }
-.contacts-list .contacts-item {
-    padding: 0 auto;
-    margin: 0 auto;
-}
-
 .contacts-item:not(:last-child) {
     margin-bottom: 9px;
 }
@@ -567,7 +584,101 @@ margin-left: 50px;
 .contacts-list > li {
     display: block;
 }
+.comming {
+    padding: 0;
+    margin: 0;
+    padding-top: 94px;
+    margin-left: 70px;
+    /*width: 300px;*/
+}
+.comming-subtitle {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        text-align: left;
+        letter-spacing: 0.03em;
+        color: var(--background-color);
+}
+.comming-social-menu {
+    display: block;
+    /*justify-content: center;*/
+    align-items: center;
+}
+/*.comming-social-item {
+    margin-right: 10px;
+}*/
+.comming-social-link {
+        display: block;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        margin-right: 10px;
+        background-color: rgba(255, 255, 255, 0.1);
+}
 
+.instagram1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.twitter1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.facebook1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.linkedin1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.instagram1 svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--background-color);
+}
+.twitter1 svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--background-color);
+}
+.facebook1 svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--background-color);
+}
+.linkedin1 svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--background-color);
+}
+.linkedin1:hover svg,
+.linkedin1:focus svg {
+    color: var(--background-color);
+}
+.linkedin1:hover svg,
+.linkedin1:focus svg {
+    fill: var(--background-color);
+}
+.linkedin1:hover svg,
+.linkedin1:focus svg {
+    fill: var(--background-color);
+}
+.linkedin1:hover svg,
+.linkedin1:focus svg {
+    fill: var(--background-color);
+}
+.comming-list {
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+}
 /*Portfolio CSS*/
 
 .header-container {
@@ -672,6 +783,7 @@ margin-left: 50px;
 .container-item:nth-last-child(-n+3) {
     margin-bottom: 0;
 }
+
 /**.container-item:not(:nth-child(3n)){
     margin-right: 30px;
 }

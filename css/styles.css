@@ -475,12 +475,14 @@ margin-left: 50px;
     margin-left: 30px;
 }
 .clients-link {
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     padding: 0;
     margin: 0;
     width: 170px;
     height: 92px;
-    padding: 16px 32px;
 
     border: 1px;
     border-style: solid;

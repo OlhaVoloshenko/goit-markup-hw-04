@@ -138,10 +138,12 @@ margin-left: 50px;
 .smartphone {
     width: 10px;
     height: 16px;
+    fill: var(--page-text-color);
 }
 .envelope {
     width: 16px;
     height: 12px;
+    fill: var(--page-text-color);
 }
 .header-item:hover svg {
     fill: var(--accent-text-color);
@@ -225,6 +227,11 @@ margin-left: 50px;
     letter-spacing: 0.06em;
     color: var(--background-color);
     background-color: var(--accent-text-color);
+    
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
 }
 /*.button-primary:hover,
 .button-primary:focus {
@@ -461,14 +468,9 @@ margin-left: 50px;
 }
 .clients-item {
     display: flex;
-    width: 170px;
-    height: 90px;
+    
     justify-content: center;
     align-items: center;
-
-    border-radius: 1px;
-    border-style: solid;
-    border-color: var(--color-icons-items);
 }
 .clients-item:not(:first-child) {
     margin-left: 30px;
@@ -477,12 +479,16 @@ margin-left: 50px;
     display: inline-flex;
     padding: 0;
     margin: 0;
-    width: 106px;
-    height: 60px;
-   /* background-color: yellow;*/
+    width: 170px;
+    height: 90px;
+    padding: 16px 32px;
+
+    border: 1px;
+    border-style: solid;
+    border-color: var(--color-icons-items);
 }
-.clients-item:hover,
-.clients-item:focus {
+.clients-link:hover,
+.clients-link:focus {
     border-color: var(--accent-text-color);
 }
 .client1,
@@ -523,7 +529,7 @@ margin-left: 50px;
     padding-top: 0;
     padding-bottom: 0;
     background-color: var(--background-color-main);
-       
+    align-items: baseline;
 }
 .contacts-logo {
     display: inline-block;
@@ -586,7 +592,6 @@ margin-left: 50px;
 .comming {
     padding: 0;
     margin: 0;
-    padding-top: 75px;
     margin-left: 70px;
     /*width: 300px;*/
 }
@@ -728,15 +733,12 @@ margin-left: 50px;
     width: calc((100% - 60px)/3);
     margin-right: 30px;
     margin-bottom: 30px;
-    border-bottom: 1px solid var(--border-portfolio-cards);
-    border-left: 1px solid var(--border-portfolio-cards);
-    border-right: 1px solid var(--border-portfolio-cards);
+    
     /*  width: 370px;*/
 }
 
 .container-item:hover {
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    background: var(--border-portfolio-cards);
     box-sizing: border-box;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -744,6 +746,9 @@ margin-left: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
+    border-bottom: 1px solid var(--border-portfolio-cards);
+    border-left: 1px solid var(--border-portfolio-cards);
+    border-right: 1px solid var(--border-portfolio-cards);
 }
 .container-list .container-subtitle {    
     font-weight: 700;
